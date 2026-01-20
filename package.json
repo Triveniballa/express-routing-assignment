@@ -1,0 +1,25 @@
+{
+  "name": "express-routing-assignment",
+  "version": "1.0.0",
+  "description": "Express routing assignment with users and todos CRUD using db.json",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "express",
+    "routing",
+    "crud",
+    "users",
+    "todos"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

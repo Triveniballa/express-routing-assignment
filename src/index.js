@@ -1,0 +1,23 @@
+const express = require("express");
+const usersRouter = require("./routes/users.routes");
+const todosRouter = require("./routes/todos.routes");
+
+const app = express();
+const PORT = 3000;
+
+// Middleware
+app.use(express.json());
+
+// ✅ ADD THIS HERE
+app.get("/", (req, res) => {
+  res.send("Express Routing Assignment API is running");
+});
+
+// Routes
+app.use("/users", usersRouter);
+app.use("/todos", todosRouter);
+
+// Server start
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
