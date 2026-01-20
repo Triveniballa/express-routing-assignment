@@ -1,3 +1,5 @@
+// entry point
+
 const express = require("express");
 const usersRouter = require("./routes/users.routes");
 const todosRouter = require("./routes/todos.routes");
